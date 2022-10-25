@@ -1,0 +1,41 @@
+<p>databinding1 works!
+ Data Binding > Binding data between ts file and template 
+ts and html or template
+
+1. 1 Way
+2. 2 Way
+ 
+ One Way Data Binding
+1. Interpoltaion   propertyname comes here 
+</p> 
+{{ 10 * 2 }} 
+  <h1> Hello {{name}} </h1> 
+  <h2> Welcome {{firstName + ' ' + lastName}}
+<img [src]="image" width="100px" height="100px"/>
+<div [innerHTML] = "firstName.concat(' ').concat(lastName)"> </div>
+  </h2>
+
+
+  <button (click)="hello();"> Click on this button </button>
+  <input type="text" value="laptop" (click)="textboxclicked($event)"/>
+
+ Name thru Property Binding <input type="text" [value]=name (click)="textboxclicked($event)"/> <br/>
+ Name thru Interpolation : <input type="text" value="{{name}}"/>
+ <br/>
+ Name thu bind-value: <input type="text" bind-value="name"/>
+ <br/>
+
+  {{name}}
+
+ Your Status is {{status ? 'Online' :'Offline'}}
+
+ Your Status is {{status ? status1 :status2}}
+
+
+<input type="text" disabled="{{disabled}}" name="" id="" value="{{name}}"/>
+<input type="text" [disabled]="disabled" name="" id="" value="{{name}}"/>
+
+<br/>
+Enter some number : <input type="number" (keyup)="keyPressed($event)"/>
+Enter some number : <input type="number" (keyup.enter)="keyPressed1($event)"/> 
+
