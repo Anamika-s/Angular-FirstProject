@@ -1,0 +1,25 @@
+.class1
+{
+   background-color: aqua;
+   font-size: x-large;
+}
+
+.class2
+{
+  width: 100px;
+  height: 100px;
+}
+
+.textRight{
+   text-align: right;
+   background-color: blue;
+}
+
+.textLeft
+{
+   text-align: left;
+}
+.textCenter
+{
+   text-align: center;
+}
