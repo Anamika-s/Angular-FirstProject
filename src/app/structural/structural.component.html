@@ -1,0 +1,79 @@
+<p>structural works!</p>
+
+<!-- <h1> List of Employees </h1>
+<table *ngIf="employees.length>0; else elseBlock1">
+  <tr>
+    <th> Employee Code </th>
+    <th> Name </th>
+    <th> Gender</th>
+    <th> Annual Salary </th>
+    <th>Date of Birth </th>
+  </tr>
+  <tr *ngIf="employee.length>0" *ngFor="let employee of employees">
+    <td> {{employee.code}} </td>
+    <td> {{employee.name}}</td>
+    <td> {{employee.gender}}</td>
+    <td> {{employee.annualSalary}} </td>
+    <td> {{employee.dateOfBirth}}</td>
+  </tr>
+</table>
+<ng-template #elseBlock1>
+<h1> There  are no records </h1>></ng-template> -->
+<h1> Hello </h1>
+
+<h1 *ngIf="isFlag"> Hello now </h1>
+
+<ng-template [ngIf]="isFlag">
+  <div>Content to render when condition is true.</div>
+</ng-template>
+
+
+<p>if - else part</p>
+<div *ngIf="isFlag; else elseBlock">
+  Content to render when condition is true.
+</div>
+<ng-template #elseBlock>
+  Content to render when condition is false.
+</ng-template>
+
+
+<div [ngSwitch]="day">
+  <div *ngSwitchCase="1"> <h1> Its Day 1 </h1></div>
+  <div *ngSwitchCase="2"> <h1> Its Day 2 </h1></div>
+  <div *ngSwitchCase="3"> <h1> Its Day 3 </h1></div>
+  <div *ngSwitchCase="4"> <h1> Its Day 4 </h1></div>
+  <div *ngSwitchCase="5"> <h1> Its Day 5 </h1></div>
+  <div *ngSwitchCase="6"> <h1> Its Day 6 </h1></div>
+  
+  <div *ngSwitchDefault> <h1>  NO day has been passed</h1></div>
+</div>
+
+
+<h1> List of Employees </h1>
+
+<table>
+  <tr>
+    <th> Employee Code </th>
+    <th> Name </th>
+    <th> Gender</th>
+    <th> Annual Salary </th>
+    <th>Date of Birth </th>
+  </tr>
+  <ng-container *ngIf="employees.length>0;else elseBlock1">
+  <tr *ngFor="let employee of employees">
+    <td> {{employee.code}} </td>
+    <td> {{employee.name}}</td>
+    <td> {{employee.gender}}</td>
+    <td> {{employee.annualSalary}} </td>
+    <td> {{employee.dateOfBirth}}</td>
+  </tr>
+ </ng-container>
+<ng-template #elseBlock1>
+  <h1> There  are no records </h1> </ng-template> 
+</table>
+
+
+
+
+
+

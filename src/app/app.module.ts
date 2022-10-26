@@ -15,6 +15,7 @@ import { TwoWayDataBindingComponent } from './two-way-data-binding/two-way-data-
 
 import { FormsModule } from '@angular/forms';
 import { ClassBindingComponent } from './class-binding/class-binding.component';
+import { StructuralComponent } from './structural/structural.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +29,8 @@ import { ClassBindingComponent } from './class-binding/class-binding.component';
     DataBindingComponent,
     AddComponentComponent,
     TwoWayDataBindingComponent,
-    ClassBindingComponent
+    ClassBindingComponent,
+    StructuralComponent
   ],
   imports: [
     BrowserModule,
